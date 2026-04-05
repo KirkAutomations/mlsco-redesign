@@ -1105,7 +1105,6 @@ resizeCanvas();
 window.addEventListener('resize',()=>{resizeCanvas();if(ANIMS[currentAnim]&&ANIMS[currentAnim].init)ANIMS[currentAnim].init()});
 
 function getPC(){return getComputedStyle(document.documentElement).getPropertyValue('--particle-color').trim()||'196,165,77'}
-const LIGHT_THEME='Parchment';
 function isLightTheme(){return document.documentElement.getAttribute('data-theme')===LIGHT_THEME}
 let compassActive=ls.get('compound','off')==='on';
 
