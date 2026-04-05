@@ -1004,7 +1004,7 @@ function applyVoice(v) {
     if (text) {
       el.classList.add('voice-fading');
       setTimeout(() => {
-        el.textContent = text;
+        el.innerHTML = text;
         el.classList.remove('voice-fading');
       }, 200);
     }
